@@ -8,7 +8,8 @@ parser.add_argument("-s", "--start-date", help="Start date (YYYY-MM-DD)")
 parser.add_argument("-r", "--return-date", help="Return date (YYYY-MM-DD)")
 parser.add_argument("-f", "--from-location", help="Start location")
 parser.add_argument("-t", "--to-location", help="Arrival location")
-parser.add_argument("-o", "--sort", help="Sort results by price or departure time (price/time)", default="price")
+parser.add_argument("-o", "--sort", help="Sort results by price or departure time (price/time)", default="price",
+                    choices=['price', 'departure'])
 
 # Parse the command line arguments
 args = parser.parse_args()
