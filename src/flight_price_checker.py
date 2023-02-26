@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
     if flights:
         for city, flights in flights['data'].items():
-            print(f"Flights to {city} from {args.start_location}:")
+            print(f"Flights to {args.to_location} from {args.from_location}:")
             for i, flight in flights.items():
                 print(f"  Flight Option {int(i) + 1}:")
                 print(f"    Price: ${flight['price']}")
